@@ -26,7 +26,9 @@ public class mathuntil1 {
         System.out.println("6!: 720, actual:" + Mathutility.getFactorial(6));
         System.out.println("0!: 1, actual:" + Mathutility.getFactorial(1));
 
-        System.out.println("expected:  IllegalArgumentException: " + Mathutility.getFactorial(-5));      //tao kì vọng mày ném về ngoại lệ, phải là ngoại lệ
+        System.out.println("expected:  IllegalArgumentException: " + Mathutility.getFactorial(-5));   
+        //tao kì vọng mày ném về ngoại lệ, phải là ngoại lệ
+        System.out.println("chuc cuoi tuan vui ve");
 
     }
 }
