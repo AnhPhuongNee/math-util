@@ -24,18 +24,32 @@ public class Mathutility {
     //giai thừ tnawg cục nhanh,21! long ko chứa được
     // bài này mình sẽ chặn giai thừ từ 0..21
     //âm hoặc 21 chửi, không thèm tính
-    public static long getFactorial(int n) {
-        if (n < 0 || n > 20) {
-            throw new IllegalArgumentException("n must be between 0...20");
-        }
-        if (n == 0 || n == 1) {
-            return 1; // đặt biệt , return luôn
-        }        // đứa nào viết else ở đây, trừ điểm 
-        // mặc nhiên ở đây hiểu rằng n= 2..20
-        long result = 1;
-        for (int i = 2; i <= n; i++) {
-            result *= i;
-        }
-        return result;
+//        public static long getFactorial(int n) {
+//            if (n < 0 || n > 20) {
+//                throw new IllegalArgumentException("n must be between 0...20");
+//            }
+//            if (n == 0 || n == 1) {
+//                return 1; // đặt biệt , return luôn
+//            }        // đứa nào viết else ở đây, trừ điểm 
+//             mặc nhiên ở đây hiểu rằng n= 2..20
+//            long result = 1;
+//            for (int i = 2; i <= n; i++) {
+//                result *= i;
+//            }
+//            return result;
+//        }
+    public static long getFactorial(int n){
+        if(n<0 || n>20)
+                throw new IllegalArgumentException("n must be between 0..20");
+        if(n == 0 || n == 1)
+            return 1;// dk dừng
+        return n * getFactorial(n - 1);// đây là đệ quy
+        // gọi lại chính hàm của mình với quy mô khac, n-1
+        // đi mãi sẽ về 1
     }
+    //5! = 5*4!
+    // đệ quy là gọi lại mình với quy mô nhỏ hơn
+    // kết luận: n!=n*(n-1)!
+    // phải có khái niệm dừng ko thì lặp vô tận
+    
 }
