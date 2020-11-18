@@ -29,7 +29,8 @@ public class mathuntil1 {
         System.out.println("expected:  IllegalArgumentException: " + Mathutility.getFactorial(-5));   
         //tao kì vọng mày ném về ngoại lệ, phải là ngoại lệ
         System.out.println("chuc cuoi tuan vui ve");
-
+        
+        System.out.println("I want to see the Red or Green!!!!!");
     }
 }
 // mình muốn kết luận hàm ngon, mình phải test hết các trường hợp xài hàm

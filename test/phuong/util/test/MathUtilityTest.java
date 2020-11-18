@@ -40,6 +40,7 @@ public class MathUtilityTest {
         assertEquals(24,getFactorial(4));
         assertEquals(720,getFactorial(6));
         assertEquals(1,getFactorial(0));
+        assertEquals(0,getFactorial(0));
                 // hãy tính dùm tui 5! coi nó có là 120 hong?
         // có thì báo xanh, không thì báo đỏ 
     }
